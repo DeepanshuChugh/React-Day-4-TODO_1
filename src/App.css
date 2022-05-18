@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+.container{
+  min-height: 100vh;
+  background-color: #0cbaba;
+background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+
+  display: flex;
+  justify-content: center;
+}
+.child{
+  text-align: center;
+  margin-top: 2rem;
+}
+.child figure img {
+  width: 10rem;
+  height: 8rem;
+}
+input {
+  min-width: 30rem;
+  height: 3.4rem;
+  padding: 2rem 1.2rem;
+  font-size: 1.8rem;
+  line-height: 1.42857143;
+  /* margin-top: 1rem; */
+  color: rgb(58, 57, 57);
+  background-color: #fff;
+  background-image: none;
+  border: 0.1rem solid #ccc;
+  border-radius: 0.4rem;
+  -webkit-box-shadow: inset 0 0.1rem 0.1rem rgb(0 0 0 / 8%);
+  box-shadow: inset 0 0.1rem 0.1rem rgb(0 0 0 / 8%);
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+input,
+input:focus,
+input:active,
+input:active:focus {
+  border: none;
+  padding: 2.3rem 1.5rem;
+  outline: none;
+}
+input {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+input:focus {
+  -webkit-box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.2);
+}
+
+.addbtn{
+  height: 4.23rem;
+  width: 4rem;
+  margin-left: 4px;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  /* padding: 1rem 1rem; */
+  border: transparent;
+  background: #fff;
+  font-weight: 900;
+}
+.addbtn:hover{
+  color: #fff;
+  background-color: #0cbaba;
+}
+
+.listView{
+  margin-top: 5px;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+}
+.fa-trash-alt{
+  /* margin-left: -2.5rem; */
+  cursor: pointer;
+  pointer-events: auto;
+  /* z-index: 10; */
+  color: rgb(61, 59, 59);
+  -webkit-transition: color 0.15s linear;
+  transition: color 0.15s linear;
+  font-size: 2rem;
+}
+
+.far:hover {
+  color: rgb(244, 58, 58)
+}
+.todo-btn {
+  width: 5rem;
+  display: flex;
+  justify-content: space-around;
+}
+.eachItem {
+  background: #fff;
+  padding: 1.2rem 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 0.7rem;
+  min-width: 30rem;
+  word-break: break-word;
+  background-color: #b3cdd1;
+background-image: linear-gradient(315deg, #b3cdd1 0%, #9fa4c4 74%);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.eachItem:hover {
+  background: rgb(152, 152, 155);
+  color: rgb(85, 41, 220);
+}
